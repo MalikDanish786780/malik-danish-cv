@@ -172,8 +172,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               rel="noopener noreferrer"
               className={`inline-flex min-h-[40px] items-center gap-2 rounded-lg px-4 py-2 text-xs font-semibold text-white transition-all shadow-sm ${
                 project.link.isPrimary
-                  ? 'bg-blue-700 hover:bg-blue-800'
-                  : 'bg-slate-900 hover:bg-slate-800'
+                  ? 'bg-emerald-600 hover:bg-emerald-700'
+                  : 'bg-blue-600 hover:bg-blue-700'
               }`}
             >
               {project.link.isPrimary ? (

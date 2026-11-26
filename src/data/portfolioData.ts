@@ -59,9 +59,9 @@ export const candidateProfile: CandidateProfile = {
   name: 'MALIK DANISH',
   roleTitle:
     'Cross-Platform App & Game Developer (Flutter, Dart, Android Studio, Kotlin & AI Studio)',
-  location: 'Mianwali, Punjab, Pakistan',
+  location: '',
   email: 'malik2024danish@gmail.com',
-  phone: '+92 335 1815620',
+  phone: '+92 332 8504620',
   whatsapp: '+92 332 8504620',
   driveApksUrl: DRIVE_APKS_URL,
   aquaSortUrl: AQUASORT_LIVE_URL,

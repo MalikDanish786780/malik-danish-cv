@@ -284,23 +284,23 @@ export function ProjectsCatalogSection({
                     href={project.link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`inline-flex min-h-[34px] items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
+                    className={`inline-flex min-h-[36px] items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-xs font-semibold whitespace-nowrap shrink-0 transition-all shadow-2xs ${
                       project.link.isPrimary
-                        ? 'bg-blue-700 text-white shadow-2xs hover:bg-blue-800'
-                        : 'border border-slate-200 bg-slate-50 text-slate-800 hover:border-slate-300 hover:bg-slate-100'
+                        ? 'bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-sm'
+                        : 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-sm'
                     }`}
                   >
                     {project.link.isPrimary ? (
                       <Gamepad2 className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                     ) : (
-                      <FolderOpen className="h-3.5 w-3.5 shrink-0 text-blue-700" aria-hidden="true" />
+                      <FolderOpen className="h-3.5 w-3.5 shrink-0 text-blue-100" aria-hidden="true" />
                     )}
                     <span>{project.link.label}</span>
-                    <ArrowUpRight className="h-3.5 w-3.5 opacity-80" aria-hidden="true" />
+                    <ArrowUpRight className="h-3.5 w-3.5 opacity-85" aria-hidden="true" />
                   </a>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-amber-700">
-                    <Clock className="h-3.5 w-3.5" aria-hidden="true" />
+                  <span className="inline-flex min-h-[36px] items-center gap-1.5 rounded-lg border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs font-semibold text-amber-800">
+                    <Clock className="h-3.5 w-3.5 text-amber-600" aria-hidden="true" />
                     <span>In Active Pipeline</span>
                   </span>
                 )}
@@ -308,7 +308,7 @@ export function ProjectsCatalogSection({
                 <button
                   type="button"
                   onClick={() => onSelectProject(project)}
-                  className="inline-flex min-h-[34px] items-center gap-1 text-xs font-semibold text-slate-600 whitespace-nowrap shrink-0 transition-colors hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-blue-700 cursor-pointer"
+                  className="inline-flex min-h-[36px] items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 whitespace-nowrap shrink-0 transition-colors hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-blue-700 cursor-pointer"
                 >
                   <span>Highlights</span>
                   <ChevronRight className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
